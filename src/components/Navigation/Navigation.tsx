@@ -8,12 +8,12 @@ interface NavigationProps {
 const Navigation = () => {
   const setActiveClass = ({ isActive }: NavigationProps) => {
     return clsx(
-      'duration-300 ease-in-out hover:text-[var(--hover-color)] focus:text-[var(--hover-color)]',
+      'duration-300 ease-in-out hover:text-[var(--hover-color)] focus:text-[var(--hover-color)] pt-5 pb-5',
       isActive && 'text-[var(--active-color)]'
     );
   };
   return (
-    <nav className='flex items-center gap-7.5 m-0 mt-5 mb-5'>
+    <nav className='flex items-center gap-7.5 m-0'>
       <NavLink to='/' className={setActiveClass}>
         Home
       </NavLink>
